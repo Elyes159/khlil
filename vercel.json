@@ -1,13 +1,13 @@
 {
 "builds": [{
-    "src": "elevate/wsgi.py",
+    "src": "khalil_wordpress/wsgi.py",
     "use": "@vercel/python",
-    "config": {"maxLambdaSize" : "15mb","runtime" : "python3.11.8"}
+    "config": {"maxLambdaSize" : "15mb","runtime" : "python3.9"}
 }],
 "routes" : [
     {
         "src" : "/(.*)",
-        "dast": "elevate/wsgi.py"
+        "dast": "khalil_wordpress/wsgi.py"
     }
 ]
 }
