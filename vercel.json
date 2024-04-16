@@ -6,8 +6,7 @@
 }],
 "routes" : [
     {
-        "src" : "/(.*)",
-        "dast": "khalil_wordpress/wsgi.py"
+        "src" : "/(.*)"
     }
 ]
 }
