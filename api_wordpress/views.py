@@ -1,6 +1,8 @@
 from rest_framework.decorators import api_view
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from django.http import FileResponse, JsonResponse
+
+from api_wordpress.utils import download_file
 from .models import Todo
 import pyembroidery # type: ignore
 from django.conf import settings
@@ -29,14 +31,12 @@ def upload_file(request, extension):
         if last_uploaded_file:
             try:
                 attached_file_path = os.path.join(settings.MEDIA_ROOT, str(last_uploaded_file.attachment))
-                
-                converted_file_path = os.path.join(settings.MEDIA_ROOT, "converted1." + extension)
-                
+                converted_file_path = os.path.join(settings.MEDIA_ROOT, "wordpress." + extension)
                 pyembroidery.convert(attached_file_path, converted_file_path)
 
                 # Vérifier si le fichier .pes converti existe avant de le renvoyer
                 if os.path.exists(converted_file_path):
-                    return FileResponse(open(converted_file_path, 'rb'), content_type='application/octet-stream')
+                    return download_file(request, "wordpress." + extension)
                 else:
                     return JsonResponse({'error': 'File not found'}, status=404)
             except Exception as e:
