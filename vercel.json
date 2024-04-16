@@ -2,11 +2,12 @@
 "builds": [{
     "src": "khalil_wordpress/wsgi.py",
     "use": "@vercel/python",
-    "config": {"maxLambdaSize" : "15mb","runtime" : "python 3.9"}
+    "config": {"maxLambdaSize" : "15mb", "runtime" :"python3.9"}
 }],
 "routes" : [
     {
-        "src" : "/(.*)"
+        "src" : "/(.*)",
+        "dest" : "khalil_wordpress/wsgi.py"
     }
 ]
 }
