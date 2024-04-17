@@ -1,4 +1,4 @@
-#!/home/kali/Desktop/khalil_wordpress/venv_name/bin/python3.10
+#!/home/kali/Desktop/khalil_wordpress/venv_name/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
