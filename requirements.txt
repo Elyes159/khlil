@@ -117,7 +117,7 @@ distorm3==3.5.2
 distro==1.9.0
 dj-database-url==2.1.0
 dj-rest-auth==5.1.0
-Django==4.0.0
+Django==3.2.19
 django-admin-generator==2.6.0
 django-appconf==1.0.6
 django-auditlog==1.0.0
