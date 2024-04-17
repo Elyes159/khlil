@@ -178,7 +178,7 @@ filedepot==0.5.2
 filelock==3.13.1
 filteralchemy==0.1.0
 flasgger==0.9.7.2.dev2
-Flask==3.0.2
+Flask==2.2.2
 Flask-Celery-Helper==1.1.0
 Flask-Classful==0.15.0.dev1
 Flask-KVSession-fork==0.6.4
@@ -773,3 +773,4 @@ zope.deprecation==5.0
 zope.event==5.0
 zope.interface==6.1
 zstandard==0.22.0
+sanic==19.6.0
