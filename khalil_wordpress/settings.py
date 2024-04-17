@@ -33,7 +33,7 @@ DEBUG = True
 # Here, they well be accessible at your-domain.onrender.com/static/... or yourcustomdomain.com/static/...
 
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ["127.0.0.1:8000",'127.0.0.1']
 
 
 # Application definition
