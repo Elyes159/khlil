@@ -115,8 +115,9 @@ diskcache==5.4.0
 distlib==0.3.8
 distorm3==3.5.2
 distro==1.9.0
+dj-database-url==2.1.0
 dj-rest-auth==5.1.0
-Django==4.2.9
+Django==4.2.11
 django-admin-generator==2.6.0
 django-appconf==1.0.6
 django-auditlog==1.0.0
@@ -178,7 +179,7 @@ filedepot==0.5.2
 filelock==3.13.1
 filteralchemy==0.1.0
 flasgger==0.9.7.2.dev2
-Flask==2.2.2
+Flask==3.0.2
 Flask-Celery-Helper==1.1.0
 Flask-Classful==0.15.0.dev1
 Flask-KVSession-fork==0.6.4
@@ -370,6 +371,7 @@ psutil==5.9.6
 psycogreen==1.0.1
 psycopg==3.1.18
 psycopg2==2.9.9
+psycopg2-binary==2.9.9
 ptyprocess==0.7.0
 publicsuffix2==2.20191221
 publicsuffixlist==0.9.3
@@ -773,4 +775,3 @@ zope.deprecation==5.0
 zope.event==5.0
 zope.interface==6.1
 zstandard==0.22.0
-sanic==19.6.0
